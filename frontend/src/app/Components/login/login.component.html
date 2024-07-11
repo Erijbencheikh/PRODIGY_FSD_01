@@ -1,0 +1,67 @@
+
+<div class="container">
+<div class="pad">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+          <div class="p-5">
+
+            <div class="text-center">
+              <h1 class="h6 text-gray-900 mb-4"><b>Please login to your account.</b></h1>
+            </div>
+            <form class="user" [formGroup]="formlogin" >
+              <div class="form-group">
+                <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                  aria-describedby="emailHelp" placeholder="Enter username..." formControlName="username" [ngClass]="{ 'is-invalid': submitted && f['username'].errors }">
+                  <div *ngIf="submitted && f['username'].errors" class="invalid-feedback">
+                    <div *ngIf="f['username'].errors['required']">Username is required</div>
+                    <div *ngIf="f['username'].errors['minlength']">
+                      Username must be at least 6 characters
+                    </div>
+                    <div *ngIf="f['username'].errors['maxlength']">
+                      Username must not exceed 20 characters
+                    </div>
+                  </div>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control form-control-user" id="exampleInputPassword"
+                  placeholder="Password" formControlName="password"  [ngClass]="{ 'is-invalid': submitted && f['password'].errors }">
+                   <div *ngIf="submitted && f['password'].errors" class="invalid-feedback" [ngClass]="{ 'is-invalid': submitted && f['password'].errors }">
+                    <div *ngIf="f['password'].errors['required']">Password is required</div>
+                   </div>
+              </div>
+
+              <div class="form-group row">
+
+                  <div class="text-center1">
+                    <a class="small" routerLink="/forgetpassword">Forget Password</a>
+                  </div>
+              </div>
+              <div class="pad"> <div class="form-group2 row">
+                <div class="sign" routerLink="/signup"><button class="btn2  btn-user btn-block">
+                  Sign up
+              </button></div>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <div class="log" >
+                  <button type="submit" class="btn btn-user btn-block" (click)="onSubmit()">
+                    Login
+                  </button></div>
+
+              </div></div>
+
+
+            </form>
+
+          </div>
+
+      </div>
+
+      <div class="signin">
+        <img src="..\assets\imgs\pic1.png" width="600" height="600" alt="xxx">
+      </div> </div>
+
+

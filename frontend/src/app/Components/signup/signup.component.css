@@ -1,0 +1,74 @@
+
+.btn {
+  background-color: #412997;
+  color: rgb(251, 251, 251);
+  top: 715px;
+  left: 1114px;
+  width: 110px;
+  height: 50px;
+  margin: auto;
+  margin-top: 40px;
+
+}
+
+.signup{
+  width: 465px;
+  background-position: center;
+  top: 608px;
+  left: 1201px;
+
+}
+
+.text-center1 {
+padding-top: 20px;
+margin-left: 45px !important;
+
+margin: auto;
+
+text-align: center;
+text-decoration: underline;
+font: normal normal normal 15px/25px Avenir;
+color: #43425D;
+opacity: 1;
+
+}
+
+.form-group1{
+margin:auto;
+justify-content: center;
+font-size: 14px;
+
+/* UI Properties */
+opacity: 1;
+}
+.col-lg-7{
+padding-left: 20px;
+}
+.p-5{
+  /* padding-left: 100px;*/
+  margin-top: 10px;
+}
+
+
+
+
+.form-group{
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 25px;
+
+}
+.user{
+  width: 500px;
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+.h6{
+  margin-top: 0px !important;
+  margin-bottom: -8px !important;
+}
+
+.container{
+  margin-top: 80px !important;
+}
